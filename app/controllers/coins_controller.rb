@@ -26,7 +26,7 @@ class CoinsController < ApplicationController
 
     respond_to do |format|
       if @coin.save
-        format.html { redirect_to coin_url(@coin), notice: "Coin was successfully created." }
+        format.html { redirect_to coin_url(@coin), notice: "A moeda foi criada com sucesso." }
         format.json { render :show, status: :created, location: @coin }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class CoinsController < ApplicationController
   def update
     respond_to do |format|
       if @coin.update(coin_params)
-        format.html { redirect_to coin_url(@coin), notice: "A moeda foi excluida com sucesso." }
+        format.html { redirect_to coin_url(@coin), notice: "A moeda foi atualizada com sucesso." }
         format.json { render :show, status: :ok, location: @coin }
       else
         format.html { render :edit, status: :unprocessable_entity }
