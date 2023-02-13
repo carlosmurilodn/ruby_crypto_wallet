@@ -1,0 +1,21 @@
+<div id="<%= dom_id coin %>", style="display:block", class='coin'>
+  <p>
+    <strong>Descrição:</strong>
+    <%= coin.description %>
+  </p>
+
+  <p>
+    <strong>Sigla:</strong>
+    <%= coin.acronym %>
+  </p>
+
+  <p>
+    <strong>Imagem:</strong>
+    <%= image_tag coin.url_image, :style => "width: 25px; height: 25px;" %>
+  </p>
+
+  <p>
+    <%= link_to "Mostrar essa moeda", coin %>
+  </p>
+
+</div>

@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+<h1><%= image_tag "https://cdn-icons-png.flaticon.com/512/5165/5165942.png", :style => "width: 25px; height: 25px;" %>  Moeda</h1>
+
+<%= render @coin %>
+
+<div>
+    <%= link_to "Editar esta moeda", edit_coin_path(@coin), class: "editar button" %>
+
+    <%= link_to "Voltar para as moedas", coins_path, class: "voltat button" %>
+
+  <%= button_to "Excluir esta moeda", @coin, method: :delete, data: {confirm: "Voce tem certeza?"}, class: "excluir button"%>
+</div>
