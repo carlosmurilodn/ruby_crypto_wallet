@@ -5,27 +5,54 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-puts "Criando as moedas..."
+spinner = TTY::Spinner.new("[:spinner] Cadastrando Moedas")
+spinner.auto_spin
 
+coins = [
+    {
+        description: "Bitcoin", 
+        acronym: "BTC",
+        url_image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Bitcoin.png"
+    },
+    {
+        description: "Ethereum", 
+        acronym: "ETH",
+        url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png"
+    },
+    {
+        description: "Dash", 
+        acronym: "DASH",
+        url_image: "https://cryptonaute.fr/wp-content/uploads/2020/05/Logo-de-la-crypto-DASH.png"
+    }
+]
+
+coins.each do |coin|
+    Coin.find_or_create_by!(coin)
+end
+
+spinner.success("(Moedas cadastradas com sucesso!)")
+
+
+
+
+=begin
 Coin.create!(
-    description: "Bitcoin", 
-    acronym: "BTC",
-    url_image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Bitcoin.png"
-
+    [
+        {
+            description: "Bitcoin", 
+            acronym: "BTC",
+            url_image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Bitcoin.png"
+        },
+        {
+            description: "Ethereum", 
+            acronym: "ETH",
+            url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png"
+        },
+        {
+            description: "Dash", 
+            acronym: "DASH",
+            url_image: "https://cryptonaute.fr/wp-content/uploads/2020/05/Logo-de-la-crypto-DASH.png"
+        }
+    ]
 )
-
-Coin.create!(
-    description: "Ethereum", 
-    acronym: "ETH",
-    url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png"
-
-)
-
-Coin.create!(
-    description: "Dash", 
-    acronym: "DASH",
-    url_image: "https://cryptonaute.fr/wp-content/uploads/2020/05/Logo-de-la-crypto-DASH.png"
-
-)
-
-puts "Moedas caadastradas com sucesso"
+=end
