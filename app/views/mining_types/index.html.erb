@@ -5,9 +5,7 @@
 <div id="mining_types">
   <% @mining_types.each do |mining_type| %>
     <%= render mining_type %>
-  <% end %>
+<% end %>
 </div>
-<br>
-<br>
-<br>
+
 <%= link_to "New mining type", new_mining_type_path %>
