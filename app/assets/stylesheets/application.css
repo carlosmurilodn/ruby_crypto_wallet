@@ -27,7 +27,21 @@ h1{
     flex-wrap: wrap;
 }
 
+#mining_types{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .coin{
+    margin: 5px;
+    padding: 5px;
+    border: 1px;
+    border-color:gray;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.mining_type{
     margin: 5px;
     padding: 5px;
     border: 1px;
