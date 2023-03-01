@@ -6,3 +6,8 @@ pt-BR:
     show: "Mostrar"
     delete: "Apagar"
     back: "Voltar"
+  greet: "Seja Bem Vindo!!!"
+  header: "Cabeçalho"
+  footer: "Rodapé"
+  language: "O idioma usado nessa aplicação é: "
+  date1: "Data"

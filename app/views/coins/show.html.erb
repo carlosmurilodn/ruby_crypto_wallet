@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 <h1><%= image_tag "https://cdn-icons-png.flaticon.com/512/5165/5165942.png", :style => "width: 25px; height: 25px;" %>  Moeda</h1>
 
-<%= render @coin %>
 
-<div>
-    <%= link_to t("links.edit"), edit_coin_path(@coin), class: "editar button" %>
+<div id="coin-show">
+  <%= render @coin %>
 
-    <%= link_to t("links.back"), coins_path, class: "voltar button" %>
+<div class="links">
+    <%= link_to t("links.edit"), edit_coin_path(@coin), class: "button" %>
+    <%= link_to t("links.back"), coins_path, class: "button" %>
+    <%= link_to t("links.delete"), @coin, method: :delete, data: {confirm: "Voce tem certeza?"}, class: "button"%>
+</div>
 
-  <%= button_to t("links.delete"), @coin, method: :delete, data: {confirm: "Voce tem certeza?"}, class: "excluir button"%>
 </div>

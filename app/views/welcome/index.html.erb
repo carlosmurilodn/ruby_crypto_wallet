@@ -1,14 +1,17 @@
-<h1>Seja Bem vindo!!!</h1>
-<p>O idioma usado nessa aplicacão é: <strong><%= t('actual_locale') %> </strong></p>
+<p>
+    <%= link_to "Idioma Português", root_path(locale: 'pt-BR') %>
+</p>
+<p>
+    <%= link_to "English", root_path(locale: 'en') %>
+</p>
 
-<p style="font-weight: bold;"> Data: <%= l(Date.today) %> </p>
+<h1><%=t('greet')%></h1>
+<p> <%=t("language")%> <strong> <%= t('actual_locale') %> </strong></p>
+
+<p> <%= t('date1') %> : <%= l(Date.today)%> </p>
 
 <p><%= t('hello') %></p>
 
 <%= render "menu" %>
 
 <p>Você está no ambinete de  <strong><%=ambiente_rails%></strong></p>
-
-
-<p>Eu sou uma variável de instância/sessão <strong><%=@meu_nome%></strong></p>
-<p>O nome do curso é: <strong><%=@nome_curso%></strong></p>

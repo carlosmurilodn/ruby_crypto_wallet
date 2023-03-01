@@ -32,21 +32,34 @@ h1{
     flex-wrap: wrap;
 }
 
-.coin{
+#coin-index {
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     padding: 5px;
-    border: 1px;
-    border-color:gray;
-    border-style: solid;
+    border: 3px solid rgb(255, 215, 0);;
     border-radius: 5px;
+
+}
+
+#coin-show {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid rgb(255, 215, 0);;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+#coin-inform{
+    display: flex;
 }
 
 .mining_type{
     margin: 5px;
     padding: 5px;
-    border: 1px;
-    border-color:gray;
-    border-style: solid;
+    border: 3px solid rgb(255, 215, 0);;
     border-radius: 5px;
 }
 
@@ -58,8 +71,39 @@ button{
 .button{
     background: none;
     border: none;
-    background-color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(255, 215, 0);
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
+    color: black;
+}
+
+.links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.show-button a{
+    background: none;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(255, 215, 0);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.coin-inform{
+    display: flex;
+}
+
+#coin-image{
+    margin-left: 30px;
 }

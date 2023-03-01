@@ -37,5 +37,12 @@ en:
     show: "Show"
     delete: "Delete"
     back: "Back"
+  greet: "Welcome!!!"
+  header: "Header"
+  footer: "Footer"
+  language: "The language used in this app is: "
+  date1: "Date"
+
+
 
 

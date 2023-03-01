@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%
+=begin%>
+ <!DOCTYPE html>
 <html>
   <head>
     <title>Teste de aplicação Ruby On Rails</title>
@@ -11,10 +13,19 @@
   </head>
 
   <body>
-  <h1>CABEÇALHO ADM</h1>
+  <h1><%=t('header')%></h1>
+  <p>
+    <%= link_to "Idioma Português", '/?locale=pt-BR' %>
+</p>
+<p>
+    <%= link_to "English", '/?locale=en' %>
+</p>
     <%= yield %>
   </body>
   <footer>
-    <h1>RODAPÉ ADM</h1>
+    <h1><%=t('footer')%></h1>
+    <h1>Apagar</h1>
   </footer>
-</html>
+</html> 
+<%
+=end%>

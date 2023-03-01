@@ -1,18 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
-<h1 style="color: green">Coins</h1>
+<h1>Coins</h1>
+<h2><%=cookies[:curso]%></h2>
+<h2><%=session[:curso]%></h2>
 
 <p>Data: <%= data_br(Date.today) %> </p>
 
 <div id="coins">
   <% @coins.each do |coin| %>
+  <div id="coin-index">
     <%= render coin %>
-    <p>
-      <%#link_to "Mostrar essa moeda", coin %>
+    <p class="show-button">
+      <%=link_to "Mostrar essa moeda", coin %>
     </p>
+    </div>
   <% end %>
 </div>
-<br>
-<br>
 <br>
 <%= link_to "Nova moeda", new_coin_path %>
