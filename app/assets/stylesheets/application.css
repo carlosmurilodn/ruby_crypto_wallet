@@ -107,3 +107,11 @@ button{
 #coin-image{
     margin-left: 30px;
 }
+
+.flags{
+    display: flex;
+}
+
+.flags p {
+    margin-right: 20px;
+}

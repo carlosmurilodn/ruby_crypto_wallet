@@ -6,15 +6,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "scaffolds", media: 'all', "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag params[:controller], media: 'all', "data-turbo-track": "reload" %>
+    
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload'%>
   </head>
 
   <body>
-    <h1><%=t('header')%></h1>
+    <h1><%=t('header')%>- <%=params[:controller]%> </h1>
       <%= yield %>
   </body>
   <footer>
     <h1><%=t('footer')%></h1>
+    <h2><%= link_to "Welcome", welcome_index_path %></h2>
   </footer>
 </html>
