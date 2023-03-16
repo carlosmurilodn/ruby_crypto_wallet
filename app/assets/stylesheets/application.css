@@ -115,3 +115,7 @@ button{
 .flags p {
     margin-right: 20px;
 }
+
+.flags img{
+    height: 50px;
+}

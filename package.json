@@ -1,0 +1,12 @@
+{
+  "name": "crypto_wallet",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "carlosmurilodn <carlos05111991@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "notifyjs": "^3.0.0"
+  }
+}
