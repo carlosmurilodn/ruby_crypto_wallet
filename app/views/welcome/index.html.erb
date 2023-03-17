@@ -1,23 +1,28 @@
-<div class="flags">
+<%# <div class="flags" id="flags">
     <p>
         <%= link_to root_path(locale: 'pt-BR') do %>
-        <img src="https://cdn-icons-png.flaticon.com/512/3909/3909370.png" style="height:50px">
-        <%end%>
-    </p>
+        <%# <img src="https://cdn-icons-png.flaticon.com/512/3909/3909370.png" style="height:50px"> %>
+        <%#end%>
+    <%# </p>
     <p>
         <%= link_to root_path(locale: 'en') do %>
-            <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" style="height:50px">
-        <%end%>
-    </p>
+            <%# <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" style="height:50px"> %>
+        <%# <%end%>
+    <%# </p>
+</div> %>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%=t('greet')%></h1>
+  <p class="lead"><%=t('welcome_message')%></p>
+  <hr class="my-4">
+  <p><%=t('menu_msg')%></p>
+    <%= render "menu" %>
+
 </div>
 
-<h1><%=t('greet')%></h1>
-<p> <%=t("language")%> <strong> <%= t('actual_locale') %> </strong></p>
+<%# <h1><%=t('greet')%>
+<p> <%#t("language")%> <strong> <%# t('current_locale') %> </strong></p>
 
-<p> <%= t('date1') %> : <%= l(Date.today)%> </p>
+<p> <%# t('date1') %><%# l(Date.today)%> </p>
 
-<p><%= t('hello') %></p>
-
-<%= render "menu" %>
-
-<p>Você está no ambinete de  <strong><%=ambiente_rails%></strong></p>
+<%# <p>Você está no ambinete de  <strong><%=ambiente_rails %>

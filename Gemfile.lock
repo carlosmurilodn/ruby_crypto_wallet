@@ -251,6 +251,7 @@ DEPENDENCIES
   rails-i18n (~> 7.0.0)
   sassc-rails
   selenium-webdriver
+  sprockets (~> 4)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails

@@ -15,6 +15,7 @@ Rails.application.config.assets.precompile += %w(cable.js
                                                 mining_types.js
                                                 scaffolds.js
                                                 welcome.js
+                                                application.js
                                                 )
 
 Rails.application.config.assets.precompile += %w(coins.css
@@ -22,3 +23,5 @@ Rails.application.config.assets.precompile += %w(coins.css
                                                 scaffolds.css
                                                 welcome.css                                   
                                                 )
+
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
