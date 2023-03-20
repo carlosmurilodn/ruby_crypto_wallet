@@ -27,14 +27,14 @@
     </div>
             <ul class="nav justify-content-end">
             <li class="nav-item">
-                <p class="nav-link">
+                <p class="nav-link" id="ptbr">
                     <%= link_to root_path(locale: 'pt-BR') do %>
                     <img src="https://cdn-icons-png.flaticon.com/512/3909/3909370.png" style="height:50px">
                     <%end%>
                 </p>
               </li>
             <li class="nav-item">
-                <p class="nav-link">
+                <p class="nav-link" id="en">
                     <%= link_to root_path(locale: 'en') do %>
                         <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" style="height:50px">
                     <%end%>
@@ -45,9 +45,7 @@
       <%= yield %>
     </div>
   </body>
-      <script>$.notify("Erro", "error");</script>
-      <script>$.notify("Cuidado", "warn");</script>
-      <script>$.notify("Informação", "info");</script>
+
       <script>$.notify("Funcionou", "success");</script>
 
   <footer>

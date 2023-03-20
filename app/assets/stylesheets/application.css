@@ -69,7 +69,7 @@ button{
     margin: 5px;
 }
 
-.button{
+/* .button{
     background: none;
     border: none;
     text-decoration: none;
@@ -79,7 +79,7 @@ button{
     padding: 5px;
     margin: 10px;
     color: black;
-}
+} */
 
 .links {
     display: flex;
@@ -89,7 +89,7 @@ button{
     justify-content:space-around;
 }
 
-.show-button a{
+/* .show-button a{
     background: none;
     border: none;
     font-weight: bold;
@@ -99,7 +99,7 @@ button{
     margin: 10px;
     text-decoration: none;
     color: black;
-}
+} */
 
 .coin-inform{
     display: flex;

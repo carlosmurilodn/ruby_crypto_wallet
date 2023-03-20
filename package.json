@@ -6,6 +6,7 @@
   "author": "carlosmurilodn <carlos05111991@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "@rails/ujs": "^6.0.0",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
