@@ -13,3 +13,6 @@ pt-BR:
   date1: "Data"
   welcome_message: "Este é o Crypto Wallet, um app para você cadastrar e acompanhar as suas cryptomoedas"
   menu_msg: "Para começar, selecione uma das opções abaixo:"
+  new-coin: "Nova Moeda"
+  show-coin: "Mostrar moeda"
+

@@ -1,4 +1,4 @@
-<div id="<%= dom_id mining_type %>" class="mining_type">
+<div id="<%= dom_id mining_type %>" class="">
   <p>
     <strong><%=MiningType.human_attribute_name(:description)%>:</strong>
     <%= mining_type.description %>
@@ -7,10 +7,6 @@
   <p>
     <strong><%=MiningType.human_attribute_name(:acronym)%>:</strong>
     <%= mining_type.acronym %>
-  </p>
-
-  <p>
-    <%= link_to "Show this mining type", mining_type %>
   </p>
 
 </div>

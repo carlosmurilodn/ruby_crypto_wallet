@@ -57,7 +57,7 @@ h1{
     display: flex;
 }
 
-.mining_type{
+.miningtype{
     margin: 5px;
     padding: 5px;
     border: 3px solid rgb(255, 215, 0);;

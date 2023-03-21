@@ -44,6 +44,10 @@ en:
   date1: "Date"
   welcome_message: "This is the Crypto Wallet, an app for you register and accompany your cryptocoins"
   menu_msg: "To start, select one of the option below:"
+  new-coin: "New Coin"
+  show-coin: "Show coin"
+  
+
 
 
 

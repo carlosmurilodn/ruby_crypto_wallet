@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Coins</h1>
+<h1><%=Coin.model_name.human(count: @coins.count)%></h1>
 <!--<h2><%=cookies[:curso]%></h2>
 <h2><%=session[:curso]%></h2>
 
@@ -11,10 +11,10 @@
   <div id="coin-index">
     <%= render coin %>
     <p class="show-button">
-      <%=link_to "Mostrar essa moeda", coin, class: "btn btn-primary" %>
+      <%=link_to t('show-coin'), coin, class: "btn btn-warning" %>
     </p>
     </div>
   <% end %>
 </div>
 <br>
-<%= link_to "Nova moeda", new_coin_path, class: "btn btn-primary" %>
+<%= link_to t('new-coin'), new_coin_path, class: "btn btn-primary" %>

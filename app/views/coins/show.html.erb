@@ -6,9 +6,9 @@
   <%= render @coin %>
 
 <div class="links">
-    <%= link_to t("links.edit"), edit_coin_path(@coin), class: "button" %>
-    <%= link_to t("links.back"), coins_path, class: "button" %>
-    <%= link_to t("links.delete"), @coin, method: :delete, data: {confirm: "Voce tem certeza?"}, class: "button"%>
+    <%= link_to t("links.edit"), edit_coin_path(@coin), class: "btn btn-success" %>
+    <%= link_to t("links.back"), coins_path, class: "btn btn-secondary" %>
+    <%= link_to t("links.delete"), @coin, method: :delete, data: {confirm: "Voce tem certeza?"}, class: "btn btn-danger"%>
 </div>
 
 </div>
