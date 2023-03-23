@@ -46,7 +46,10 @@ en:
   menu_msg: "To start, select one of the option below:"
   new-coin: "New Coin"
   show-coin: "Show coin"
-  
+  new_mining_type: "New Mining Type"
+  editing_mining_type: "Editing Mining Type"
+  show_mining_type: "Show this mining type"
+  new_mining_type: "New mining type"
 
 
 

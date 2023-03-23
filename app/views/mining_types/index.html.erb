@@ -7,10 +7,10 @@
     <div class="miningtype">
     <%= render mining_type %>
       <p>
-    <%= link_to "Show this mining type", mining_type, class: "btn btn-warning" %>
+    <%= link_to t('links.show'), mining_type, class: "btn btn-warning" %>
     </p>
     </div>
     <% end %>
 </div>
 
-<%= link_to "New mining type", new_mining_type_path, class: "btn btn-primary" %>
+<%= link_to t('new_mining_type'), new_mining_type_path, class: "btn btn-primary" %>

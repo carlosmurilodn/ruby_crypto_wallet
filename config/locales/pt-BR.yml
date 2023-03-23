@@ -15,4 +15,8 @@ pt-BR:
   menu_msg: "Para começar, selecione uma das opções abaixo:"
   new-coin: "Nova Moeda"
   show-coin: "Mostrar moeda"
+  new_mining_type: "Novo Tipo de Mineração"
+  editing_mining_type: "Editando Tipo de Mineração"
+  show_mining_type: "Mostrar esse tipo de mineração"
+  new_mining_type: "Novo tipo de mineração"
 

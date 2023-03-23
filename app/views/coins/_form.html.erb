@@ -11,33 +11,36 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block; margin-top: 10px; margin-bottom: 10px" %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
+  <br>
 
-  <div>
-    <%= form.label :acronym, style: "display: block; margin-top: 10px; margin-bottom: 10px" %>
-    <%= form.text_field :acronym %>
+  <div class="form-group">
+    <%= form.label :acronym %>
+    <%= form.text_field :acronym, class: "form-control" %>
   </div>
+  <br>
 
-  <div>
-    <%= form.label :url_image, style: "display: block; margin-top: 10px; margin-bottom: 10px" %>
-    <%= form.text_field :url_image %>
+  <div class="form-group">
+    <%= form.label :url_image %>
+    <%= form.text_field :url_image, class: "form-control"  %>
     <%#=image_tag coin.url_image, width: 25, height: 25%>
 
     <% if @coin.url_image != nil
     image_tag coin.url_image, size: "25x25" %>
     <% end %>
   </div>
+  <br>
 
-  <div class="field">
-    <%= form.label :mining_type_id, style: "display: block; margin-top: 10px; margin-bottom: 10px" %>
-    <%= form.select("mining_type_id", @mining_type_options, {include_blank: "Selecione um tipo"}) %>
+  <div class="form-group">
+    <%= form.label :mining_type_id %>
+    <%= form.select("mining_type_id", @mining_type_options, {include_blank: "Selecione um tipo"}, class: "form-control") %>
   </div>
-
-  <div>
-    <%= form.submit style: "margin-top: 10px; margin-bottom: 10px"%>
+  <br>
+  <div class="actions">
+    <%= form.submit nil , class: "btn btn-primary"%>
   </div>
 
 <% end %>
