@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-Br" data-bs-theme="dark">
   <head>
     <title>Teste de aplicação Ruby On Rails</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,7 +19,7 @@
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload'%>
   </head>
 
-  <body>
+  <body class="">
   <div class ="container-fluid">
     <%# <div class="flags"><%= link_to welcome_index_path do %>
     <%# <img src="https://cdn-icons-png.flaticon.com/512/5974/5974636.png"> %>
@@ -40,13 +40,18 @@
                     <%end%>
                 </p>
             </li>
+            <li class="nav-item dark-button" onclick="document.body.classList.toggle('dark')">
+                <p class="nav-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5558/5558234.png" style="height:50px">
+                </p>
+            </li>
         </ul>
     <%# <h1><%=t('header')%> <%#params[:controller]%>
       <%= yield %>
     </div>
   </body>
 
-      <script>$.notify("Funcionou", "success");</script>
+      <%# <script>$.notify("Funcionou", "success");</script> %>
 
   <footer>
     <%# <h1><%=t('footer')%>

@@ -14,9 +14,22 @@
  *= require_self
  *= require bootstrap/dist/css/bootstrap
  */
+
+*{
+    transition: linear 0.2s;
+}
 body {
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dark{
+    background: #0b0023;
+    color: aliceblue;
+}
+
+.dark-button {
+    cursor: pointer;
 }
 
 h1{
