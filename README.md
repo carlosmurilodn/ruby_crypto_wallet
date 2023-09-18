@@ -1,6 +1,6 @@
 # README
 
-![Static Badge](https://img.shields.io/badge/Ruby_Version-3.1.3-red)
+![Static Badge](https://img.shields.io/badge/Versão_do_Ruby-3.1.3-red)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
