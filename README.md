@@ -1,7 +1,7 @@
 # README
 
 ![Static Badge](https://img.shields.io/badge/Versão_do_Ruby-3.1.3-red)
-![Badge](https://img.shields.io/badge/Blog-Rocketseat-%237159c1?style=plastic&logo=ghost)
+![Badge](https://img.shields.io/badge/Blog-Rocketseat-%237159c1?style=plastic&logo=apple)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
