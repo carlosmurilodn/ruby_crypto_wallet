@@ -1,6 +1,6 @@
 # README
 
-![Static Badge](https://img.shields.io/badge/Versão_do_Ruby-3.1.3-861a22&logo=ruby-on-rails)
+![Static Badge](https://img.shields.io/badge/Versão_do_Ruby-3.1.3-861a22?logo=ruby-on-rails)
 ![Badge](https://img.shields.io/badge/Blog-Rocketseat-%237159c1?&logo=ruby-on-rails)
 
 This README would normally document whatever steps are necessary to get the
