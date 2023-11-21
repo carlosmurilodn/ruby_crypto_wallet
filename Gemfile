@@ -32,6 +32,8 @@ gem "coffee-rails"
 
 gem 'sprockets', '~> 4'
 
+gem 'elastic-apm'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

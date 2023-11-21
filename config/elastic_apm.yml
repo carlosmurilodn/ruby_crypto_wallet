@@ -1,0 +1,5 @@
+# config/elastic_apm.yml:
+service_name: 'crypto_wallet'
+secret_token: ''
+server_url: 'http://vm-lnx-0277:8200'
+environment: 'vm-lnx-0277'
